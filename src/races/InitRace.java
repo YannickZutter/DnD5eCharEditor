@@ -1,5 +1,7 @@
 package races;
 
+import java.util.ArrayList;
+
 public abstract class InitRace implements RaceInterface {
 
     private String name;
@@ -9,6 +11,7 @@ public abstract class InitRace implements RaceInterface {
     private int intelligence;
     private int wisdom;
     private int charisma;
+    private int speed;
 
     public InitRace(){
 
@@ -59,5 +62,35 @@ public abstract class InitRace implements RaceInterface {
     @Override
     public int getCharisma() {
         return charisma;
+    }
+
+    @Override
+    public int getSpeed(){
+        return speed;
+    }
+    public ArrayList<String> getAllAttributes(){
+
+        ArrayList<String> attributes = new ArrayList<String>();
+
+        attributes.add(getName());
+        attributes.add(getRasse());
+        attributes.add(String.valueOf(getStrength()));
+        attributes.add(String.valueOf(getDexterity()));
+        attributes.add(String.valueOf(getConstitution()));
+        attributes.add(String.valueOf(getIntelligence()));
+        attributes.add(String.valueOf(getWisdom()));
+        attributes.add(String.valueOf(getCharisma()));
+        attributes.add(String.valueOf(getSpeed()));
+        for(int i = 0; i<getRacialBonus().size(); i++){
+            attributes.add(getRacialBonus().get(i));
+        }
+        for(int i = 0; i<getSubRacialBonus().size(); i++){
+            attributes.add(getSubRacialBonus().get(i));
+        }
+        for(int i = 0; i<getLanguages().size(); i++){
+            attributes.add(getLanguages().get(i));
+        }
+        attributes.add(String.valueOf(getSize()));
+        return attributes;
     }
 }
