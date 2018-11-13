@@ -2,7 +2,7 @@ package classes;
 
 import java.util.ArrayList;
 
-public class Class_Bard extends InitClass{
+public class Class_Druid extends InitClass {
 
     private int numHitDie;
     private String hitDice;
@@ -18,53 +18,48 @@ public class Class_Bard extends InitClass{
     private ArrayList<String> fourthEquipmentChoice = new ArrayList<>();
     private ArrayList<String> guaranteedEquipment = new ArrayList<>();
 
-    public Class_Bard(){
+    public Class_Druid() {
 
         numHitDie = 1;
         hitDice = "d8";
         proficiencyBonus = 2;
         hitpoints = 8;
-        savingThrows.add("Dexterity");
-        savingThrows.add("Charisma");
-        skills.add("Acrobatics");
-        skills.add("Animal Handling");
+        savingThrows.add("Intelligence");
+        savingThrows.add("Wisdom");
         skills.add("Arcana");
-        skills.add("Athletics");
-        skills.add("Deception");
-        skills.add("History");
+        skills.add("Animal Handling");
         skills.add("Insight");
-        skills.add("Intimidation");
-        skills.add("Investigation");
         skills.add("Medicine");
         skills.add("Nature");
         skills.add("Perception");
-        skills.add("Performance");
-        skills.add("Persuasion");
         skills.add("Religion");
-        skills.add("Sleight of Hand");
-        skills.add("Stealth");
         skills.add("Survival");
+        features.add("Druidic");
         features.add("Spellcasting");
-        features.add("Bardic Inspiration");
         proficiencies.add("Light Armor");
-        proficiencies.add("Simple Weapons");
-        proficiencies.add("Hand Crossbows");
-        proficiencies.add("Longswords");
-        proficiencies.add("Rapiers");
-        proficiencies.add("Shortswords");
-        proficiencies.add("Three Musical Instruments of Your Choice");
-        firstEquipmentChoice.add("Rapier");
-        firstEquipmentChoice.add("Longsword");
+        proficiencies.add("Medium Armor");
+        proficiencies.add("Shields");
+        proficiencies.add("Clubs");
+        proficiencies.add("Daggers");
+        proficiencies.add("Darts");
+        proficiencies.add("Javelins");
+        proficiencies.add("Maces");
+        proficiencies.add("Quarterstaffs");
+        proficiencies.add("Scimitars");
+        proficiencies.add("Sickles");
+        proficiencies.add("Slings");
+        proficiencies.add("Spears");
+        proficiencies.add("Herbalism Kit");
+        firstEquipmentChoice.add("Wooden Shield");
         firstEquipmentChoice.add("Any Simple Weapon");
-        secondEquipmentChoice.add("Diplomat's Pack");
-        secondEquipmentChoice.add("Entertainer's Pack");
-        thirdEquipmentChoice.add("Lute");
-        thirdEquipmentChoice.add("Any Other Musical Instrument");
+        secondEquipmentChoice.add("Scimitar");
+        secondEquipmentChoice.add("Any Simple Weapon");
         guaranteedEquipment.add("Leather Armor");
-        guaranteedEquipment.add("Dagger");
+        guaranteedEquipment.add("Explorer's Pack");
+        guaranteedEquipment.add("Druidic Focus");
     }
 
-    public String getKlasse(){
-        return Classes.Bard.toString();
+    public String getKlasse() {
+        return Classes.Druid.toString();
     }
 }

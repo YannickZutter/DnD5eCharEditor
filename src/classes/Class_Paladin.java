@@ -2,7 +2,7 @@ package classes;
 
 import java.util.ArrayList;
 
-public class Class_Cleric extends InitClass {
+public class Class_Paladin extends InitClass {
 
     private int numHitDie;
     private String hitDice;
@@ -18,39 +18,33 @@ public class Class_Cleric extends InitClass {
     private ArrayList<String> fourthEquipmentChoice = new ArrayList<>();
     private ArrayList<String> guaranteedEquipment = new ArrayList<>();
 
-    public Class_Cleric() {
+    public Class_Paladin() {
 
         numHitDie = 1;
-        hitDice = "d8";
+        hitDice = "d10";
         proficiencyBonus = 2;
-        hitpoints = 8;
+        hitpoints = 10;
         savingThrows.add("Wisdom");
         savingThrows.add("Charisma");
-        skills.add("History");
+        skills.add("Athletics");
         skills.add("Insight");
+        skills.add("Intimidation");
         skills.add("Medicine");
         skills.add("Persuasion");
         skills.add("Religion");
-        features.add("Spellcasting");
-        features.add("Divine Domain");
-        proficiencies.add("Light Armor");
-        proficiencies.add("Medium Armor");
-        proficiencies.add("Shields");
-        proficiencies.add("All Simple Weapons");
-        firstEquipmentChoice.add("Mace");
-        firstEquipmentChoice.add("Warhammer");
-        secondEquipmentChoice.add("Scale Mail");
-        secondEquipmentChoice.add("Leather Armor");
-        secondEquipmentChoice.add("Chain Mail");
-        thirdEquipmentChoice.add("Light Crossbow and 20 Bolts");
-        thirdEquipmentChoice.add("Any Simple Weapon");
-        fourthEquipmentChoice.add("Priest's Pack");
-        fourthEquipmentChoice.add("Explorer's Pack");
-        guaranteedEquipment.add("Shield");
+        features.add("Divine Sense");
+        proficiencies.add("Lay on Hands");
+        firstEquipmentChoice.add("Martial Weapon and a Shield");
+        firstEquipmentChoice.add("Two Martial Weapons");
+        secondEquipmentChoice.add("5 Javelins");
+        secondEquipmentChoice.add("Any Simple Melee Weapon");
+        thirdEquipmentChoice.add("Priest's Pack");
+        thirdEquipmentChoice.add("Explorer's Pack");
+        guaranteedEquipment.add("Chain Mail");
         guaranteedEquipment.add("Holy Symbol");
     }
 
     public String getKlasse() {
-        return Classes.Cleric.toString();
+        return Classes.Paladin.toString();
     }
 }

@@ -2,7 +2,7 @@ package classes;
 
 import java.util.ArrayList;
 
-public class Class_Cleric extends InitClass {
+public class Class_Sorcerer extends InitClass {
 
     private int numHitDie;
     private String hitDice;
@@ -18,39 +18,37 @@ public class Class_Cleric extends InitClass {
     private ArrayList<String> fourthEquipmentChoice = new ArrayList<>();
     private ArrayList<String> guaranteedEquipment = new ArrayList<>();
 
-    public Class_Cleric() {
+    public Class_Sorcerer() {
 
         numHitDie = 1;
-        hitDice = "d8";
+        hitDice = "d6";
         proficiencyBonus = 2;
-        hitpoints = 8;
-        savingThrows.add("Wisdom");
+        hitpoints = 6;
+        savingThrows.add("Constitution");
         savingThrows.add("Charisma");
-        skills.add("History");
+        skills.add("Arcana");
+        skills.add("Deception");
         skills.add("Insight");
-        skills.add("Medicine");
+        skills.add("Intimidation");
         skills.add("Persuasion");
         skills.add("Religion");
         features.add("Spellcasting");
-        features.add("Divine Domain");
-        proficiencies.add("Light Armor");
-        proficiencies.add("Medium Armor");
-        proficiencies.add("Shields");
-        proficiencies.add("All Simple Weapons");
-        firstEquipmentChoice.add("Mace");
-        firstEquipmentChoice.add("Warhammer");
-        secondEquipmentChoice.add("Scale Mail");
-        secondEquipmentChoice.add("Leather Armor");
-        secondEquipmentChoice.add("Chain Mail");
-        thirdEquipmentChoice.add("Light Crossbow and 20 Bolts");
-        thirdEquipmentChoice.add("Any Simple Weapon");
-        fourthEquipmentChoice.add("Priest's Pack");
-        fourthEquipmentChoice.add("Explorer's Pack");
-        guaranteedEquipment.add("Shield");
-        guaranteedEquipment.add("Holy Symbol");
+        features.add("Sorcerous Origin");
+        proficiencies.add("Daggers");
+        proficiencies.add("Darts");
+        proficiencies.add("Slings");
+        proficiencies.add("Quarterstaffs");
+        proficiencies.add("Light Crossbows");
+        firstEquipmentChoice.add("Light Crossbow and 20 Bolts");
+        firstEquipmentChoice.add("Any Simple Weapon");
+        secondEquipmentChoice.add("Component Pouch");
+        secondEquipmentChoice.add("Arcane Focus");
+        thirdEquipmentChoice.add("Dungeoneer's Pack");
+        thirdEquipmentChoice.add("Explorer's Pack");
+        guaranteedEquipment.add("Two Daggers");
     }
 
     public String getKlasse() {
-        return Classes.Cleric.toString();
+        return Classes.Sorcerer.toString();
     }
 }

@@ -2,7 +2,7 @@ package classes;
 
 import java.util.ArrayList;
 
-public class Class_Bard extends InitClass{
+public class Class_Rogue extends InitClass {
 
     private int numHitDie;
     private String hitDice;
@@ -18,53 +18,48 @@ public class Class_Bard extends InitClass{
     private ArrayList<String> fourthEquipmentChoice = new ArrayList<>();
     private ArrayList<String> guaranteedEquipment = new ArrayList<>();
 
-    public Class_Bard(){
+    public Class_Rogue() {
 
         numHitDie = 1;
         hitDice = "d8";
         proficiencyBonus = 2;
         hitpoints = 8;
         savingThrows.add("Dexterity");
-        savingThrows.add("Charisma");
+        savingThrows.add("Intelligence");
         skills.add("Acrobatics");
-        skills.add("Animal Handling");
-        skills.add("Arcana");
         skills.add("Athletics");
         skills.add("Deception");
-        skills.add("History");
         skills.add("Insight");
         skills.add("Intimidation");
         skills.add("Investigation");
-        skills.add("Medicine");
-        skills.add("Nature");
         skills.add("Perception");
         skills.add("Performance");
         skills.add("Persuasion");
-        skills.add("Religion");
         skills.add("Sleight of Hand");
         skills.add("Stealth");
-        skills.add("Survival");
-        features.add("Spellcasting");
-        features.add("Bardic Inspiration");
+        features.add("Expertise");
+        features.add("Sneak Attack");
+        features.add("Thieves' Cant");
         proficiencies.add("Light Armor");
         proficiencies.add("Simple Weapons");
         proficiencies.add("Hand Crossbows");
         proficiencies.add("Longswords");
         proficiencies.add("Rapiers");
         proficiencies.add("Shortswords");
-        proficiencies.add("Three Musical Instruments of Your Choice");
+        proficiencies.add("Thieves' Tools");
         firstEquipmentChoice.add("Rapier");
-        firstEquipmentChoice.add("Longsword");
-        firstEquipmentChoice.add("Any Simple Weapon");
-        secondEquipmentChoice.add("Diplomat's Pack");
-        secondEquipmentChoice.add("Entertainer's Pack");
-        thirdEquipmentChoice.add("Lute");
-        thirdEquipmentChoice.add("Any Other Musical Instrument");
+        firstEquipmentChoice.add("Shortsword");
+        secondEquipmentChoice.add("Shortbow and Quiver fo 20 Arrows");
+        secondEquipmentChoice.add("Shortsword");
+        thirdEquipmentChoice.add("Burglar's Pack");
+        thirdEquipmentChoice.add("Dungeoneer's Pack");
+        thirdEquipmentChoice.add("Explorer's Pack");
         guaranteedEquipment.add("Leather Armor");
-        guaranteedEquipment.add("Dagger");
+        guaranteedEquipment.add("Two Daggers");
+        guaranteedEquipment.add("Thieves' Tools");
     }
 
-    public String getKlasse(){
-        return Classes.Bard.toString();
+    public String getKlasse() {
+        return Classes.Rogue.toString();
     }
 }
